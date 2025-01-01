@@ -290,6 +290,7 @@ section h2::after {
 .project-box h5 {
     margin-bottom: 0.5rem;
     font-weight: 500;
+    color: #1a1c20;
 }
 
 .project-box p {
