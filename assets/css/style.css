@@ -1,6 +1,6 @@
 :root {
     --text-color: #ffffff;
-    --body-color: #1a1c20
+    --body-color: #001F3FE6
     --link-color: #ffffff;
     --background-color: #eeeff1;
     font-size: 17px; /* Set the base font size */
@@ -284,6 +284,7 @@ section h2::after {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
     font-weight: 600;
+    color: #1a1c20;
 }
 
 .project-box h5 {
