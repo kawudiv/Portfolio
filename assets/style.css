@@ -195,6 +195,127 @@ body {
     }
 }
 
+#services{
+    text-align:center;
+    padding: 50px 0;
+}
+
+#services h2{
+    color: #1d49a8;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.serviceIcanOffer{
+    margin-bottom: 30px;
+}
+
+#service p{
+    color: #E5E7EB;
+    margin-bottom:  30px;
+}
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    position: relative;
+    background: #1d49a8;
+    color: white;
+    padding: 60px 20px 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 40px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.service-card:hover{
+    transform: scale(1.05)
+}
+
+.service-card i{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service-card h3{
+    margin-bottom: 5px;
+}
+
+.service-card h4{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-card p{
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+#techstacks {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#techstacks h2 {
+    color: #A783D9;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#techstacks p {
+    color: #E5E7EB;
+    margin-bottom: 30px;
+}
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.tech-box {
+    background: #1d49a8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-box:hover {
+    transform: scale(1.05);
+}
+
+.tech-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.tech-box p {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -206,11 +327,11 @@ body {
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: #081A2D; /* Matches the navbar */
+        background-color: #081A2D; 
         text-align: center;
         padding: 15px 0;
         border-radius: 10px;
-        border: 2px solid #0F2A22; /* Deep teal border */
+        border: 2px solid #0F2A22; 
         width: 200px;
     }
 
