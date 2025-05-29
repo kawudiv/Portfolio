@@ -1,3 +1,4 @@
-document.querySelector(".nav-toggle").addEventListener("click", function () {
-    document.querySelector(".nav-links").classList.toggle("active");
-});
+function scrollToSection(id){
+    const section = document.getElementById(id);
+    section.scrollIntoView({behavior: 'smooth'});
+}

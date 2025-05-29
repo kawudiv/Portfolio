@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jem Centino - Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <script src="assets/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jem Centino - Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <script src="assets/script.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home-section" class="active">Home</a></li>
+        <li><a href="#services" onclick="scrollToSection('about')">Services</a></li>
+        <li><a href="#techstacks">TechStacks</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="logo">JEM <span>CENTINO</span></div>
-        <ul class="nav-links">
-            <li><a href="#home-section" class="active">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#techstacks">TechStacks</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-        <a href="#contact" class="btn">Contact</a>
-    </nav>
-    
-    <header id="home-section">
-        <div class="hero-content">
-            <h1>Hello, I'm Jem Centino</h1>
-            <h2 class="highlight">Software Developer</h2>
-            <p>Building intuitive and innovative applications for a better user experience.</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-        <div class="header-image">
-            <img src="assets/images/Jem.jpg" alt="Kawu's Picture">
-        </div>
-    </header>
+  <div class="main-layout">
+    <div class="left-panel">
+      <div class="hero-content">
+        <h1><strong>Jem Harold Centino</strong></h1>
+        <h2>Aspiring Software Developer</h2>
+        <p>I enjoy building smooth, user-friendly web applications, developing awesome digital experiences using my expertise in interface design, React, Next.js and Go.</p>
 
-    <section id="services">
+        <div class="contact-box">
+          <p><strong>Let's connect and build something great!</strong></p>
+          <p>@jharold.centino@gmail.com</p>
+          <p>📞 (+63) 94644604037</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jemcentino/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="black" width="24" height="24">
+              <title>LinkedIn</title>
+              <path d="M20.45 20.45h-3.554v-5.568c0-1.33-.026-3.044-1.857-3.044-1.86 0-2.145 1.45-2.145 2.948v5.664h-3.555V9h3.413v1.56h.048c.475-.9 1.635-1.847 3.362-1.847 3.597 0 4.261 2.365 4.261 5.44v6.296zM5.337 7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.144.926-2.07 2.07-2.07 1.144 0 2.07.926 2.07 2.07 0 1.143-.926 2.07-2.07 2.07zm1.777 13.017H3.56V9h3.554v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.206 24 24 23.226 24 22.271V1.729C24 .774 23.206 0 22.225 0z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/kawudiv" target="_blank" aria-label="GitHub">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M12 0C5.373 0 0 5.373 0 12a12 12 0 008.205 11.437c.6.111.82-.261.82-.577v-2.02c-3.338.725-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.082-.73.082-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.931 0-1.31.47-2.38 1.237-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.44 11.44 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.628-5.48 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576A12.004 12.004 0 0024 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="mailto:jharold.centino@gmail.com" aria-label="Email">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M12 13.065L0 6.533V18a2 2 0 002 2h20a2 2 0 002-2V6.533l-12 6.532zM12 10.935l11.648-6.316A2 2 0 0022 4H2a2 2 0 00-1.648.619L12 10.935z"/>
+            </svg>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="right-panel">
+      <section id="services">
         <h2>Services</h2>
         <p class="serviceIcanOffer">Here are the services I can offer</p>
         <div class="service-container">
-            <div class="service-card">
-                <i class="fa-solid fa-paint-brush"></i>
-                <h3>UI/UX Design</h3>
-                <p>Transforming ideas into visually stunning and user-friendly experiences that captivate and engage.</p>
-            </div>            
-            <div class="service-card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Building high-performance, responsive websites and web apps that deliver speed, security, and scalability.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3>Mobile Development</h3>
-                <p>Developing seamless, feature-rich mobile applications that provide a top-tier experience on IOS and Android.</p>
-            </div>
+          <div class="service-card">
+            <i class="fa-solid fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+            <p>Transforming ideas into visually stunning and user-friendly experiences that captivate and engage.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building high-performance, responsive websites and web apps that deliver speed, security, and scalability.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Mobile Development</h3>
+            <p>Developing seamless, feature-rich mobile applications that provide a top-tier experience on iOS and Android.</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="techstacks">
+      <section id="techstacks">
         <h2>TechStacks</h2>
-        <p>Here are the tools & technologies I use</p>
+        <p>Technologies I work with</p>
         <div class="tech-container">
-            <div class="tech-box"><img src="html-icon.png" alt="HTML"><p>HTML</p></div>
-            <div class="tech-box"><img src="css-icon.png" alt="CSS"><p>CSS</p></div>
-            <div class="tech-box"><img src="tailwind-icon.png" alt="TailwindCSS"><p>TailwindCSS</p></div>
-            <div class="tech-box"><img src="js-icon.png" alt="JavaScript"><p>JavaScript</p></div>
-            <div class="tech-box"><img src="ts-icon.png" alt="TypeScript"><p>TypeScript</p></div>
-            <div class="tech-box"><img src="react-icon.png" alt="React"><p>React</p></div>
-            <div class="tech-box"><img src="bootstrap-icon.png" alt="Bootstrap"><p>Bootstrap</p></div>
-            <div class="tech-box"><img src="node-icon.png" alt="NodeJS"><p>NodeJS</p></div>
+          <div class="tech-box"><img src="assets/images/html5.png" alt="HTML5" /><p>HTML5</p></div>
+          <div class="tech-box"><img src="assets/images/css3.png" alt="CSS3" /><p>CSS3</p></div>
+          <div class="tech-box"><img src="assets/images/js.png" alt="JavaScript" /><p>JavaScript</p></div>
+          <div class="tech-box"><img src="assets/images/react.png" alt="React" /><p>React</p></div>
         </div>
-    </section>
-    
-    
-    <section id="about-section">
-        <h2>Hi, I'm Kawu!</h2>
-        <p>Hi! I'm Jem Harold S. Centino, an IT student from Lingayen, Pangasinan, passionate about Software Development and building robust technological systems. 
-            I thrive on solving complex logic and creating infrastructure that drives innovation and endless possibilities.</p>
-    </section>
-    <div class="divider"></div>
-    <section id="projects-section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Isometric Game</h3>
-            <p>A Unity-based isometric adventure game inspired by Tunic and League of Legends.</p>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>I’m a passionate developer focused on building performant and accessible digital products with great user experiences.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="assets/images/project1.jpg" alt="Project 1" />
+            <div class="project-info">
+              <h3>Project Name 1</h3>
+              <p>Short description of the project, highlighting its features and technologies used.</p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/project2.jpg" alt="Project 2" />
+            <div class="project-info">
+              <h3>Project Name 2</h3>
+              <p>Short description of the project, highlighting its features and technologies used.</p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/project3.jpg" alt="Project 3" />
+            <div class="project-info">
+              <h3>Project Name 3</h3>
+              <p>Short description of the project, highlighting its features and technologies used.</p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
         </div>
-        <div class="project">
-            <h3>AI Reading Companion</h3>
-            <p>An AI-powered tool for assisting students with reading disabilities.</p>
-        </div>
-        <div class="project">
-            <h3>Crypto Booking App</h3>
-            <p>A hotel and restaurant booking app with cryptocurrency payment support.</p>
-        </div>
-    </section>
-    <div class="divider"></div>
-    <section id="contact-section">
-        <h2>Contact</h2>
-        <p>Let's connect!</p>
-        <div class="social-links">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-    </section>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
