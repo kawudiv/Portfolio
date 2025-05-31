@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
@@ -61,74 +62,153 @@
 
 
     <div class="right-panel">
-      <section id="services">
-        <h2>Services</h2>
-        <p class="serviceIcanOffer">Here are the services I can offer</p>
-        <div class="service-container">
-          <div class="service-card">
-            <i class="fa-solid fa-paint-brush"></i>
-            <h3>UI/UX Design</h3>
-            <p>Transforming ideas into visually stunning and user-friendly experiences that captivate and engage.</p>
-          </div>
-          <div class="service-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Building high-performance, responsive websites and web apps that deliver speed, security, and scalability.</p>
-          </div>
-          <div class="service-card">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3>Mobile Development</h3>
-            <p>Developing seamless, feature-rich mobile applications that provide a top-tier experience on iOS and Android.</p>
+    <section class="about-section">
+      <div class="section-header">About Me</div>
+      <h2><span>Aspiring Software Developer</span> passionate about building accessible digital solutions.</h2>
+      <p>
+        Hi! I'm Jem Harold Centino, an IT student from Lingayen, Pangasinan. Passionate about Software Development and building robust technological systems. I thrive on solving complex logic and creating infrastructure that drives innovation and endless possibilities.
+      </p>
+      <p>
+        My experience so far includes academic projects and capstone systems like a voice-assisted reading app for children and a GPS-based app for persons with disabilities. I’m currently sharpening my skills in Flutter, Firebase, MongoDB, and interface design—while actively building my portfolio through meaningful student projects.      </p>
+    </section>
+
+    <section class="arsenal-section">
+      <h3 class="section-header">My Digital Arsenal </h3>
+      <div class="arsenal-grid">
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <div class="icons">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-flutter-plain colored"></i>
+            <i class="devicon-kotlin-plain colored"></i>
           </div>
         </div>
-      </section>
 
-      <section id="techstacks">
-        <h2>TechStacks</h2>
-        <p>Technologies I work with</p>
-        <div class="tech-container">
-          <div class="tech-box"><img src="assets/images/html5.png" alt="HTML5" /><p>HTML5</p></div>
-          <div class="tech-box"><img src="assets/images/css3.png" alt="CSS3" /><p>CSS3</p></div>
-          <div class="tech-box"><img src="assets/images/js.png" alt="JavaScript" /><p>JavaScript</p></div>
-          <div class="tech-box"><img src="assets/images/react.png" alt="React" /><p>React</p></div>
-        </div>
-      </section>
-
-      <section id="about">
-        <h2>About</h2>
-        <p>I’m a passionate developer focused on building performant and accessible digital products with great user experiences.</p>
-      </section>
-
-      <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="assets/images/project1.jpg" alt="Project 1" />
-            <div class="project-info">
-              <h3>Project Name 1</h3>
-              <p>Short description of the project, highlighting its features and technologies used.</p>
-              <a href="#" class="btn">View Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/images/project2.jpg" alt="Project 2" />
-            <div class="project-info">
-              <h3>Project Name 2</h3>
-              <p>Short description of the project, highlighting its features and technologies used.</p>
-              <a href="#" class="btn">View Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/images/project3.jpg" alt="Project 3" />
-            <div class="project-info">
-              <h3>Project Name 3</h3>
-              <p>Short description of the project, highlighting its features and technologies used.</p>
-              <a href="#" class="btn">View Project</a>
-            </div>
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <div class="icons">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-go-original colored"></i>
+            <i class="devicon-csharp-plain colored"></i>
+            <i class="devicon-express-original colored"></i> <!-- optional if using Express -->
+            <i class="devicon-php-plain colored"></i> 
           </div>
         </div>
-      </section>
-    </div>
+
+        <div class="tech-category">
+          <h4>Database</h4>
+          <div class="icons">
+            <i class="devicon-mongodb-plain colored"></i>
+            <i class="devicon-firebase-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4>Tools</h4>
+          <div class="icons">
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-docker-plain colored"></i>
+            <i class="devicon-vscode-plain colored"></i>
+            <i class="devicon-figma-plain colored"></i>
+            <i class="devicon-androidstudio-plain colored"></i>
+            <i class="devicon-unity-original colored"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects-section">
+      <h2 class="section-header">Projects</h2>
+      <!-- Big Projects -->
+      <h4 style="margin-top: 40px;">Major Works</h4>
+      <div class="projects-container">
+        <a href="https://github.com/kawudiv/Accessability" class="project-card" target="_blank">
+        <img src="https://opengraph.githubassets.com/1/kawudiv/Accessability" alt="Accessibility Project Image">          
+          <div class="project-info">
+            <h3>Accessability</h3>
+            <p>Description of your big project 1.</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/kawudiv/Lumen" class="project-card" target="_blank">
+        <img src="https://opengraph.githubassets.com/1/kawudiv/Lumen" alt="Lumen Project Image">          
+          <div class="project-info">
+            <h3>Lumen</h3>
+            <p>Description of your big project 2.</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/kawudiv/Cryptotel" class="project-card" target="_blank">
+        <img src="https://opengraph.githubassets.com/1/kawudiv/Cryptotel" alt="Cryptotel Project Image">
+          <div class="project-info">
+            <h3>Cryptotel</h3>
+            <p>Description of your big project 2.</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/kawudiv/After-Earth" class="project-card" target="_blank">
+        <img src="https://opengraph.githubassets.com/1/kawudiv/After-Earth" alt="Cryptotel Project Image">
+          <div class="project-info">
+            <h3>After Earth</h3>
+            <p>Description of your big project 2.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Small Projects -->
+      <h4 style="margin-top: 40px;">Quick Builds</h4>
+    <div class="projects-container">
+      <!-- Dice -->
+      <div class="project-card">
+        <a href="https://github.com/kawudiv/Dice" target="_blank">
+          <img src="https://opengraph.githubassets.com/1/kawudiv/Dice" alt="Dice App Preview">
+          <div class="project-info">
+            <h3>Dice</h3>
+            <p>A simple dice-rolling app used to practice animations and random logic in Flutter.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Hand Gesture Detection -->
+      <div class="project-card">
+        <a href="https://github.com/kawudiv/Hand-Gesture-Detection" target="_blank">
+          <img src="https://opengraph.githubassets.com/1/kawudiv/Hand-Gesture-Detection" alt="Hand Gesture Detection Preview">
+          <div class="project-info">
+            <h3>Hand Gesture Detection</h3>
+            <p>Computer vision project that detects hand gestures using Python and OpenCV.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Fine-tuning -->
+      <div class="project-card">
+        <a href="https://github.com/kawudiv/Fine-tuning" target="_blank">
+          <img src="https://opengraph.githubassets.com/1/kawudiv/Fine-tuning" alt="Fine-tuning Preview">
+          <div class="project-info">
+            <h3>Fine-tuning</h3>
+            <p>A collection of experiments on customizing language models and prompt engineering.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- RPS-Android -->
+      <div class="project-card">
+        <a href="https://github.com/kawudiv/RPS-Android" target="_blank">
+          <img src="https://opengraph.githubassets.com/1/kawudiv/RPS-Android" alt="Rock Paper Scissors Android Preview">
+          <div class="project-info">
+            <h3>RPS-Android</h3>
+            <p>Android app of the classic Rock-Paper-Scissors game, built using Kotlin and Android Studio.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </div>
   </div>
 </body>
 </html>
